@@ -5,6 +5,8 @@ Sprites and game concept are not open source - they are property of Looney Labs.
 
 Sorry for the lack of comments - I am working on adding those at the moment.
 
+### To play the game you need to select VS CPU.
+
 ## How to draw cards:
 
 If you want to try it out - just know that you need to press the ` key (to the left of 1 on US keyboards - the one that does ~ with the shift key) 
