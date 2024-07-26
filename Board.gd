@@ -231,7 +231,7 @@ func drawCard(playerNumber, times = 1):
 func takeTurn(playerNumber):
 	currentPlayer = playerNumber
 	drawCard(playerNumber,getDraws(playerNumber))
-	players[playerNumber].plays = getPlays(playerNumber)
+	players[playerNumber].plays += getPlays(playerNumber)
 	playerDock.update(players[playerNumber].dockSlot)
 
 func cardPlaceForSpaceAtI(space,i):
