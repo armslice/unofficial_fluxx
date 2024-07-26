@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dsvvuit2fpow5"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_b1u75"]
+
+[resource]
+script = ExtResource("1_b1u75")
+id = "Recycling"
+title = ""
+subtitle = "Free Action"
+description = "Once during your turn, you may discard one of your Keepers from the table and draw 3 extra cards."
+type = 1

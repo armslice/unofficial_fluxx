@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dwy3smm1bqyl5"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_q7oj6"]
+
+[resource]
+script = ExtResource("1_q7oj6")
+id = "Can’t Buy Me Love"
+title = ""
+subtitle = "Money + Love"
+description = ""
+type = 0
+values = ["Money", "Love"]

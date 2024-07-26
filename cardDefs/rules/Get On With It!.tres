@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://cdwv26a6uv6md"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_qpkee"]
+
+[resource]
+script = ExtResource("1_qpkee")
+id = "Get On With It!"
+title = ""
+subtitle = "Free Action"
+description = "Before your final play, if you are not empty handed, you may discard your entire hand and draw 3 cards. Your turn then ends immediately."
+type = 1

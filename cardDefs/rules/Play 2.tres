@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://c3d3ffq6jvi2i"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_w0hxh"]
+
+[resource]
+script = ExtResource("1_w0hxh")
+id = "Play 2"
+title = ""
+subtitle = "Replaces Play Rule"
+description = "Play 2 cards per turn. If you have fewer than that, play all your cards."
+type = 1
+values = [2]

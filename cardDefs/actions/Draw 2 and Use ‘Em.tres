@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dmhwlipm73j78"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_spcyx"]
+
+[resource]
+script = ExtResource("1_spcyx")
+id = "Draw 2 and Use ‘Em"
+title = "Draw 2 and *Use ‘Em"
+subtitle = ""
+description = "Set your hand aside.
+
+Draw 2 cards, play them in any order you choose, then pick up your hand and continue with your turn.
+
+This card, and all cards played because of it, are counted as a single play."
+type = 2

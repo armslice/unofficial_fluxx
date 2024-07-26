@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://drq8f4s2neifm"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_qxepp"]
+
+[resource]
+script = ExtResource("1_qxepp")
+id = "The Rocket"
+title = "The Rocket"
+subtitle = ""
+description = ""
+type = 3

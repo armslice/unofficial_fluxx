@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bqytag57o7mxn"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_c7ava"]
+
+[resource]
+script = ExtResource("1_c7ava")
+id = "First Play Random"
+title = "First Play *Random"
+subtitle = "Takes Instant Effect"
+description = "The first card you play must be chosen at random from your hand by the player on your left. Ignore this rule if the current Rule cards allow you to play only one card."
+type = 1

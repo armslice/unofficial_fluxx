@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bs4ypk8t4moo8"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_28q3k"]
+
+[resource]
+script = ExtResource("1_28q3k")
+id = "Great Theme Song"
+title = "Great Theme *Song"
+subtitle = "Music + Television"
+description = ""
+type = 0
+values = ["Music", "Television"]

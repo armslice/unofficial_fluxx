@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgpqcn062cujk"]
+
+[ext_resource type="Texture2D" uid="uid://dj46ac2pgo4jv" path="res://sprites/miniKeeper.png" id="1_rkbgo"]
+[ext_resource type="Script" path="res://miniKeeper.gd" id="1_tfi28"]
+[ext_resource type="Texture2D" uid="uid://ck7bxc27qthkb" path="res://sprites/placeholder.png" id="2_158jc"]
+
+[node name="MiniKeeper" type="Node2D"]
+script = ExtResource("1_tfi28")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(0, -2)
+texture = ExtResource("1_rkbgo")
+offset = Vector2(-2, -45)
+
+[node name="image" type="Sprite2D" parent="."]
+position = Vector2(9, -35)
+scale = Vector2(0.78, 0.86)
+texture = ExtResource("2_158jc")
+offset = Vector2(-7.05128, -15.6977)

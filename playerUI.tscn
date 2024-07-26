@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=3 uid="uid://c38h22k771q1x"]
+
+[ext_resource type="FontFile" uid="uid://br6a1l5lq5trv" path="res://fonts/Fjalla.ttf" id="1_8456y"]
+[ext_resource type="Script" path="res://playerUI.gd" id="2_exdhf"]
+[ext_resource type="Texture2D" uid="uid://bfks2mvrxrfx8" path="res://sprites/FluxCardBackMini.png" id="3_l3p71"]
+[ext_resource type="Texture2D" uid="uid://doivuwrqil8d5" path="res://sprites/playIcon.png" id="4_8l1po"]
+
+[sub_resource type="Theme" id="Theme_0nila"]
+default_font = ExtResource("1_8456y")
+default_font_size = 41
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -174.0
+offset_bottom = -6.0
+mouse_filter = 2
+theme = SubResource("Theme_0nila")
+script = ExtResource("2_exdhf")
+
+[node name="name" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+offset_left = 8.0
+offset_top = 195.0
+offset_right = 294.0
+offset_bottom = 251.0
+text = "Player Name"
+
+[node name="info" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 258.0
+offset_right = 716.0
+offset_bottom = 314.0
+
+[node name="playIcon" type="TextureRect" parent="info"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("4_8l1po")
+expand_mode = 4
+
+[node name="cardSpot" type="Marker2D" parent="info/playIcon"]
+position = Vector2(25, 78)
+
+[node name="playsX" type="Label" parent="info"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = " x"
+horizontal_alignment = 2
+
+[node name="plays" type="Label" parent="info"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cardIcon" type="TextureRect" parent="info"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("3_l3p71")
+expand_mode = 3
+
+[node name="cardSpot" type="Marker2D" parent="info/cardIcon"]
+position = Vector2(25, 78)
+
+[node name="cardsx" type="Label" parent="info"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+text = " x"
+horizontal_alignment = 2
+
+[node name="cardCount" type="Label" parent="info"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="miniKeeperSpot" type="Marker2D" parent="."]
+position = Vector2(324, 310)
+
+[node name="keeperSpot" type="Marker2D" parent="."]
+position = Vector2(85, 162)

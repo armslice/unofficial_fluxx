@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://orl07jcqpky0"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_yiipq"]
+
+[resource]
+script = ExtResource("1_yiipq")
+id = "Hand Limit 0"
+title = ""
+subtitle = "Replaces Hand Limit"
+description = "If it isn't your turn, you can only have O cards in your hand. Discard extras immediately. During your turn, this rule does not apply to you, after your turn ends, discard down to O cards."
+type = 1
+values = [0]

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bj71y30rndxqq"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_wpfbx"]
+
+[resource]
+script = ExtResource("1_wpfbx")
+id = "Inflation"
+title = ""
+subtitle = "Takes Instant Effect"
+description = "Any time a numeral is seen on another card, add one to that numeral. For example, 1 becomes 2, while one remains one. Yes, this affects the Basic Rules."
+type = 1

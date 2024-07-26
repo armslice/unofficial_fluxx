@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://b2nqum2wjleom"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_nxmk3"]
+
+[resource]
+script = ExtResource("1_nxmk3")
+id = "Rotate Hands"
+title = ""
+subtitle = ""
+description = "All players pass their hands to the player next to them.
+
+You decide which direction."
+type = 2

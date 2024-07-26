@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dk4wsqyh32ypc"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_cvb68"]
+
+[resource]
+script = ExtResource("1_cvb68")
+id = "Swap Plays for Draws"
+title = ""
+subtitle = "Takes Instant Effect"
+description = "During your turn, you may decide to play no more cards and instead draw as many cards as you have plays remaining. If Play All, draw as many cards as you hold."
+type = 1

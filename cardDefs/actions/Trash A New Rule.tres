@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://biy0qbbl0r3w5"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_uvm45"]
+
+[resource]
+script = ExtResource("1_uvm45")
+id = "Trash A New Rule"
+title = "Trash A New *Rule"
+subtitle = ""
+description = "Select one of the New Rule cards in play and place it in the discard pile."
+type = 2

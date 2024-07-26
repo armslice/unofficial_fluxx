@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://j7jq1nrafx7u"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_wjott"]
+
+[resource]
+script = ExtResource("1_wjott")
+id = "10 Cards in Hand"
+title = "10 Cards in *Hand"
+subtitle = ""
+description = "If someone has 10 or more cards in his or her hand, then the player with the most cards in hand wins.
+In the event of a tie, continue playing until a clear winner emerges."
+type = 0

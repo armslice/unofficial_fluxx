@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://eju167g3no43"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_a4qyx"]
+
+[resource]
+script = ExtResource("1_a4qyx")
+id = "Trade Hands"
+title = ""
+subtitle = ""
+description = "Trade your hand for the hand of one of your opponents.
+
+This is one of those times when you can get something for nothing!"
+type = 2

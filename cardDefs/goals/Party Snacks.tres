@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dg7qv5dnmxub6"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_pkdg1"]
+
+[resource]
+script = ExtResource("1_pkdg1")
+id = "Party Snacks"
+title = ""
+subtitle = "The Party + at least 1 food Keeper"
+description = ""
+type = 0

@@ -1,0 +1,351 @@
+[gd_scene load_steps=20 format=3 uid="uid://dasipowglo7kn"]
+
+[ext_resource type="Script" path="res://Card.gd" id="1_55mvd"]
+[ext_resource type="Texture2D" uid="uid://dbcu3abg61l8t" path="res://sprites/FluxCardFaceBG.png" id="2_mh2eb"]
+[ext_resource type="Texture2D" uid="uid://df5oarvycl2md" path="res://sprites/FluxCardFaceFG.png" id="3_qjgtd"]
+[ext_resource type="FontFile" uid="uid://biq07t1hunp87" path="res://fonts/AutoPro-Black.ttf" id="4_71e0c"]
+[ext_resource type="FontFile" uid="uid://8nt58a1ywb4h" path="res://fonts/chubgothic_1.ttf" id="5_8o8ui"]
+[ext_resource type="Texture2D" uid="uid://ck7bxc27qthkb" path="res://sprites/placeholder.png" id="5_cu7jo"]
+[ext_resource type="Texture2D" uid="uid://d0weffa1op40" path="res://sprites/FluxCardBack.png" id="6_n3d0d"]
+[ext_resource type="Shape2D" uid="uid://cohw1ym3qq54q" path="res://CardColShape.tres" id="7_cnkd3"]
+
+[sub_resource type="FontVariation" id="FontVariation_c0tnp"]
+base_font = ExtResource("4_71e0c")
+spacing_bottom = -14
+
+[sub_resource type="Theme" id="Theme_jfoli"]
+default_font = SubResource("FontVariation_c0tnp")
+default_font_size = 36
+
+[sub_resource type="FontVariation" id="FontVariation_o2vl1"]
+variation_embolden = -0.45
+
+[sub_resource type="Animation" id="Animation_q6snn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("facebg:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1e-05, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("back:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+
+[sub_resource type="Animation" id="Animation_qykpx"]
+resource_name = "dealToOther"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1.31951),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(0.13, 0.13)]
+}
+
+[sub_resource type="Animation" id="Animation_0yvg1"]
+resource_name = "dealToSelf"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("facebg:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1), Vector2(1e-05, 1), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("back:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.95),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(0.6, 0.6)]
+}
+
+[sub_resource type="Animation" id="Animation_0kyjh"]
+resource_name = "grow"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.6, 0.6), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_euwgm"]
+resource_name = "played_reset"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("facebg:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.6, 0.6)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lmsk8"]
+_data = {
+"RESET": SubResource("Animation_q6snn"),
+"dealToOther": SubResource("Animation_qykpx"),
+"dealToSelf": SubResource("Animation_0yvg1"),
+"grow": SubResource("Animation_0kyjh"),
+"played_reset": SubResource("Animation_euwgm")
+}
+
+[sub_resource type="Gradient" id="Gradient_lnhts"]
+offsets = PackedFloat32Array(0, 0.59375, 0.986842)
+colors = PackedColorArray(0.960784, 0.976471, 0.243137, 0, 0.980392, 0.988235, 0.858824, 0.572549, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7imhc"]
+gradient = SubResource("Gradient_lnhts")
+
+[node name="Card" type="Node2D"]
+z_index = 10
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_55mvd")
+
+[node name="facebg" type="Sprite2D" parent="."]
+scale = Vector2(1e-05, 1)
+texture = ExtResource("2_mh2eb")
+centered = false
+offset = Vector2(-184.286, -600.286)
+
+[node name="face" type="Sprite2D" parent="facebg"]
+self_modulate = Color(0.619608, 0.784314, 0.0352941, 1)
+position = Vector2(0, -4)
+texture = ExtResource("3_qjgtd")
+centered = false
+offset = Vector2(-184.286, -600.286)
+
+[node name="Text" type="Control" parent="facebg/face"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -182.0
+offset_top = -598.0
+offset_right = -142.0
+offset_bottom = -558.0
+theme = SubResource("Theme_jfoli")
+
+[node name="Type" type="Label" parent="facebg/face/Text"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 95.0
+offset_top = 26.0
+offset_right = 342.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("5_8o8ui")
+theme_override_font_sizes/font_size = 52
+text = "TYPE"
+vertical_alignment = 2
+
+[node name="icon" type="TextureRect" parent="facebg/face/Text"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 30.0
+offset_right = 74.0
+offset_bottom = 92.0
+texture = ExtResource("5_cu7jo")
+
+[node name="SideName" type="Label" parent="facebg/face/Text"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 557.0
+offset_right = 463.0
+offset_bottom = 621.0
+rotation = -1.5708
+theme_override_fonts/font = ExtResource("4_71e0c")
+theme_override_font_sizes/font_size = 42
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="vbox" type="VBoxContainer" parent="facebg/face/Text"]
+layout_mode = 0
+offset_left = 90.3333
+offset_top = 123.0
+offset_right = 358.333
+offset_bottom = 570.0
+theme_override_constants/separation = 2
+
+[node name="center" type="CenterContainer" parent="facebg/face/Text/vbox"]
+layout_mode = 2
+
+[node name="gfx" type="TextureRect" parent="facebg/face/Text/vbox/center"]
+layout_mode = 2
+texture = ExtResource("5_cu7jo")
+stretch_mode = 2
+
+[node name="Title" type="Label" parent="facebg/face/Text/vbox"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/line_spacing = 0
+text = "
+"
+autowrap_mode = 2
+
+[node name="space1" type="Control" parent="facebg/face/Text/vbox"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Subtitle" type="Label" parent="facebg/face/Text/vbox"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 2
+
+[node name="space2" type="Control" parent="facebg/face/Text/vbox"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Body" type="Label" parent="facebg/face/Text/vbox"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/line_spacing = -2
+theme_override_fonts/font = SubResource("FontVariation_o2vl1")
+theme_override_font_sizes/font_size = 19
+text = "Discard your choice of up to half (rounded up) of the New Rule cards in play."
+autowrap_mode = 2
+
+[node name="keeper" type="Control" parent="facebg/face/Text"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="facebg/face/Text/keeper"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 359.0
+offset_bottom = 515.0
+
+[node name="Title" type="Label" parent="facebg/face/Text/keeper"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 97.0
+offset_top = 529.0
+offset_right = 345.0
+offset_bottom = 570.0
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 32
+text = "Keeper Title"
+autowrap_mode = 2
+
+[node name="GoalGfx" type="TextureRect" parent="facebg/face/Text"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 264.0
+offset_right = 355.0
+offset_bottom = 572.0
+
+[node name="back" type="Sprite2D" parent="."]
+position = Vector2(4, 0)
+texture = ExtResource("6_n3d0d")
+centered = false
+offset = Vector2(-188, -598)
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_lmsk8")
+}
+
+[node name="area" type="Area2D" parent="."]
+
+[node name="collision" type="CollisionShape2D" parent="area"]
+position = Vector2(-1, -300.26)
+shape = ExtResource("7_cnkd3")
+
+[node name="button" type="TextureButton" parent="."]
+offset_left = -173.0
+offset_top = -583.0
+offset_right = 180.0
+offset_bottom = -15.0
+mouse_filter = 1
+texture_normal = ExtResource("5_cu7jo")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="button"]
+layout_mode = 0
+offset_right = 365.0
+offset_bottom = 581.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_progress = SubResource("GradientTexture2D_7imhc")
+radial_initial_angle = 90.1
+
+[connection signal="mouse_entered" from="area" to="." method="_on_area_mouse_entered"]
+[connection signal="mouse_exited" from="area" to="." method="_on_area_mouse_exited"]

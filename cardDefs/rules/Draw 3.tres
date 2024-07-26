@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://d17g4qjgjq2r4"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_3rau3"]
+
+[resource]
+script = ExtResource("1_3rau3")
+id = "Draw 3"
+title = ""
+subtitle = "Replaces Draw Rule "
+description = "Draw 3 cards per turn. 
+If you just played this card, draw extra cards as needed to reach 3 cards drawn."
+type = 1
+values = [3]

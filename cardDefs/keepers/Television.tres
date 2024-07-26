@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dgbekhypuan6c"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_vxv5t"]
+
+[resource]
+script = ExtResource("1_vxv5t")
+id = "Television"
+title = "Television"
+subtitle = ""
+description = ""
+type = 3

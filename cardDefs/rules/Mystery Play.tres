@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://djh702rws24o3"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_3pe4g"]
+
+[resource]
+script = ExtResource("1_3pe4g")
+id = "Mystery Play"
+title = ""
+subtitle = "Free Action"
+description = "Once during your turn, you may take the top card from the draw pile and play it immediately."
+type = 1

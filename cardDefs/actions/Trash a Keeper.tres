@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://cs3v2sdy14fx3"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_rgwe6"]
+
+[resource]
+script = ExtResource("1_rgwe6")
+id = "Trash a Keeper"
+title = ""
+subtitle = ""
+description = "Take a Keeper from in front of any player and put it on the discard pile.
+
+If no one has any Keepers in play, nothing happens when you play this card."
+type = 2

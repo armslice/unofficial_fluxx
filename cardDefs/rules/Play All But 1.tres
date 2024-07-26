@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://d3oukkgp4p3nn"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_e4cdu"]
+
+[resource]
+script = ExtResource("1_e4cdu")
+id = "Play All But 1"
+title = ""
+subtitle = "Replaces Play Rule"
+description = "Play all but 1 of your cards. If you started with no cards in your hand and only drew 1, draw an extra card."
+type = 1
+values = [-1]

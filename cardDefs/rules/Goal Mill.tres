@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://c8v2odhbjkl2t"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_n2ffc"]
+
+[resource]
+script = ExtResource("1_n2ffc")
+id = "Goal Mill"
+title = ""
+subtitle = "Free Action"
+description = "Once during your turn, discard as many of your Goal cards as you choose, then draw that many cards."
+type = 1

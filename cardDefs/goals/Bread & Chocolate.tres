@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://c84tg6e75cchr"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_wu8fc"]
+
+[resource]
+script = ExtResource("1_wu8fc")
+id = "Bread & Chocolate"
+title = ""
+subtitle = "Bread + Chocolate"
+description = ""
+type = 0
+values = ["Bread", "Chocolate"]

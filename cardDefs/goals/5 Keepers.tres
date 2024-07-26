@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bcydmmh1xs6n1"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_od6vk"]
+
+[resource]
+script = ExtResource("1_od6vk")
+id = "5 Keepers"
+title = ""
+subtitle = ""
+description = "If someone has 5 or more Keepers on the table, then the player with the most Keepers in play wins.
+In the event of a tie, continue playing until a clear winner emerges."
+type = 0

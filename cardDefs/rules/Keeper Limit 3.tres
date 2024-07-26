@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://b6cvsseo8jgb6"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_8v5xd"]
+
+[resource]
+script = ExtResource("1_8v5xd")
+id = "Keeper Limit 3"
+title = ""
+subtitle = "Replaces Keeper Limit "
+description = "If it isn't your turn, you can only have 3 Keepers in play. Discard extras immediately. You may acquire new Keepers during your turn as long as you discard down to 3 when your turn ends."
+type = 1

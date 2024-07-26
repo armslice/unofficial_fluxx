@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://cqv5dolhlqk5y"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_s7052"]
+
+[resource]
+script = ExtResource("1_s7052")
+id = "The Appliances"
+title = ""
+subtitle = "The Toaster + Television"
+description = ""
+type = 0
+values = ["The Toaster", "Television"]

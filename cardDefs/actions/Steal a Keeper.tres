@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://c6bdt1axugyy7"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_cbyhf"]
+
+[resource]
+script = ExtResource("1_cbyhf")
+id = "Steal a Keeper"
+title = ""
+subtitle = ""
+description = "Steal a Keeper from in front of another player, and add it to your collection of Keepers on the table."
+type = 2

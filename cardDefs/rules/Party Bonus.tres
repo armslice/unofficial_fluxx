@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://0ptxlx3cv2f1"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_h0m4t"]
+
+[resource]
+script = ExtResource("1_h0m4t")
+id = "Party Bonus"
+title = ""
+subtitle = "Takes Instant Effect"
+description = "If someone has the Party on the table, all players draw 1 extra card and play 1 extra card during their tums."
+type = 1

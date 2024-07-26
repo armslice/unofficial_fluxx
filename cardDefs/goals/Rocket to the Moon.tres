@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://co4qa03c4g8im"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_hpejk"]
+
+[resource]
+script = ExtResource("1_hpejk")
+id = "Rocket to the Moon"
+title = ""
+subtitle = "The Rocket + The Moon"
+description = ""
+type = 0
+values = ["The Rocket", "The Moon"]

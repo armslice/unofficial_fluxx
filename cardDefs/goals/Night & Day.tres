@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bgrur3bgd32o"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_6meks"]
+
+[resource]
+script = ExtResource("1_6meks")
+id = "Night & Day"
+title = ""
+subtitle = "The Sun + The Moon"
+description = ""
+type = 0
+values = ["The Sun", "The Moon"]

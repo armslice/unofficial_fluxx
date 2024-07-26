@@ -1,0 +1,262 @@
+[gd_scene load_steps=18 format=3 uid="uid://b7oniniwlfbq5"]
+
+[ext_resource type="Script" path="res://Board.gd" id="1_aue67"]
+[ext_resource type="Texture2D" uid="uid://d0weffa1op40" path="res://sprites/FluxCardBack.png" id="4_fob02"]
+[ext_resource type="Texture2D" uid="uid://bq3ooxxej6mck" path="res://sprites/FluxCardStack.png" id="5_p7um1"]
+[ext_resource type="PackedScene" uid="uid://b2t4aenjjmfp7" path="res://PlayerDock.tscn" id="6_kxmas"]
+[ext_resource type="Texture2D" uid="uid://c77srf2b2akut" path="res://sprites/felt_brown.png" id="7_ivp2j"]
+[ext_resource type="Texture2D" uid="uid://dbcu3abg61l8t" path="res://sprites/FluxCardFaceBG.png" id="7_q40p2"]
+[ext_resource type="Texture2D" uid="uid://bixgf3ps1l1id" path="res://sprites/BasicRullFg.png" id="8_0bvnp"]
+[ext_resource type="FontFile" uid="uid://br6a1l5lq5trv" path="res://fonts/Fjalla.ttf" id="8_at6h7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fi0ah"]
+size = Vector2(1150.5, 416)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ruyml"]
+size = Vector2(33, 29)
+
+[sub_resource type="Animation" id="Animation_3b3dj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(960, 540)]
+}
+
+[sub_resource type="Animation" id="Animation_4hyg3"]
+resource_name = "focusOnRules"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.28, 1.28)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1.31951),
+"update": 0,
+"values": [Vector2(960, 540), Vector2(753, 408)]
+}
+
+[sub_resource type="Animation" id="Animation_5qd7x"]
+resource_name = "panRight"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1.6245),
+"update": 0,
+"values": [Vector2(960, 540), Vector2(1672, 540)]
+}
+
+[sub_resource type="Animation" id="Animation_qwdpo"]
+resource_name = "panUp"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1.86607),
+"update": 0,
+"values": [Vector2(960, 540), Vector2(960, 80)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ol1uh"]
+_data = {
+"RESET": SubResource("Animation_3b3dj"),
+"focusOnRules": SubResource("Animation_4hyg3"),
+"panRight": SubResource("Animation_5qd7x"),
+"panUp": SubResource("Animation_qwdpo")
+}
+
+[sub_resource type="Theme" id="Theme_usbxe"]
+default_font = ExtResource("8_at6h7")
+default_font_size = 75
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eco3v"]
+bg_color = Color(0, 0, 0, 0.843137)
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_aue67")
+metadata/_edit_horizontal_guides_ = [211.0, 637.0, 613.0]
+metadata/_edit_vertical_guides_ = [1433.0, 602.0, 305.0, 908.0]
+
+[node name="PlayerDock" parent="." instance=ExtResource("6_kxmas")]
+position = Vector2(-6, 0)
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HandPos" type="Marker2D" parent="."]
+position = Vector2(185, 1066)
+
+[node name="dropZone1" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="dropZone1"]
+polygon = PackedVector2Array(-4, 172, 3, 632, 1283, 635, 1282, 1077, 1927, 1080, 1934, 635, 1520, 633, 1517, 169)
+
+[node name="dropZone2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dropZone2"]
+position = Vector2(555.75, 858)
+shape = SubResource("RectangleShape2D_fi0ah")
+
+[node name="dropper" type="Area2D" parent="."]
+position = Vector2(0, -300)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dropper"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_ruyml")
+
+[node name="BasicCard" type="Sprite2D" parent="."]
+position = Vector2(596, 416)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_q40p2")
+
+[node name="Sprite2D" type="Sprite2D" parent="BasicCard"]
+position = Vector2(0, -4)
+scale = Vector2(0.56, 0.56)
+texture = ExtResource("8_0bvnp")
+
+[node name="limitRulesSpot" type="Marker2D" parent="."]
+position = Vector2(203, 566)
+
+[node name="drawRuleSpot" type="Marker2D" parent="."]
+position = Vector2(498, 566)
+
+[node name="playRuleSpot" type="Marker2D" parent="."]
+position = Vector2(695, 566)
+
+[node name="otherRulesSpot" type="Marker2D" parent="."]
+position = Vector2(890, 876)
+
+[node name="freeActionRulesSpot" type="Marker2D" parent="."]
+position = Vector2(890, 566)
+
+[node name="keeperSpot" type="Marker2D" parent="."]
+position = Vector2(1367, 1037)
+
+[node name="goalSpot" type="Marker2D" parent="."]
+position = Vector2(1415, 566)
+
+[node name="Deck" type="Node2D" parent="."]
+position = Vector2(1618, 568)
+scale = Vector2(0.5, 0.5)
+
+[node name="top" type="Sprite2D" parent="Deck"]
+z_index = 5
+position = Vector2(0, -184)
+texture = ExtResource("4_fob02")
+offset = Vector2(0, -300)
+
+[node name="stack" type="Sprite2D" parent="Deck"]
+z_index = 1
+position = Vector2(0, -104)
+texture = ExtResource("5_p7um1")
+
+[node name="discardSpot" type="Marker2D" parent="."]
+position = Vector2(1811, 566)
+
+[node name="stack" type="Sprite2D" parent="discardSpot"]
+visible = false
+z_index = 1
+position = Vector2(2, -52)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_p7um1")
+
+[node name="actionSpot" type="Marker2D" parent="."]
+position = Vector2(955, 870)
+
+[node name="stack" type="Sprite2D" parent="actionSpot"]
+visible = false
+z_index = 1
+position = Vector2(2, -52)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_p7um1")
+
+[node name="background" type="Sprite2D" parent="."]
+modulate = Color(0.341176, 0.341176, 0.341176, 1)
+z_index = -1
+position = Vector2(1320, 186)
+scale = Vector2(1.54736, 1.14551)
+texture = ExtResource("7_ivp2j")
+
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ol1uh")
+}
+
+[node name="Message" type="Node2D" parent="."]
+z_index = 200
+position = Vector2(-117, 552)
+
+[node name="Panel" type="Panel" parent="Message"]
+offset_left = 53.0
+offset_top = -122.0
+offset_right = 2063.0
+offset_bottom = 159.0
+pivot_offset = Vector2(-2, 70)
+theme = SubResource("Theme_usbxe")
+theme_override_styles/panel = SubResource("StyleBoxFlat_eco3v")
+
+[node name="Label" type="Label" parent="Message/Panel"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 7.0
+offset_right = 1919.0
+offset_bottom = 277.0
+text = "THIS IS A TEST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="area_entered" from="dropZone1" to="." method="_on_drop_zone_area_entered" binds= [1]]
+[connection signal="area_exited" from="dropZone1" to="." method="_on_drop_zone_area_exited" binds= [1]]
+[connection signal="mouse_entered" from="dropZone1" to="." method="_on_drop_zone_mouse_entered" binds= [1]]
+[connection signal="mouse_exited" from="dropZone1" to="." method="_on_drop_zone_mouse_exited" binds= [1]]
+[connection signal="area_entered" from="dropZone2" to="." method="_on_drop_zone_area_entered" binds= [2]]
+[connection signal="area_exited" from="dropZone2" to="." method="_on_drop_zone_area_exited" binds= [2]]
+[connection signal="mouse_entered" from="dropZone2" to="." method="_on_drop_zone_mouse_entered" binds= [2]]
+[connection signal="mouse_exited" from="dropZone2" to="." method="_on_drop_zone_mouse_exited" binds= [2]]

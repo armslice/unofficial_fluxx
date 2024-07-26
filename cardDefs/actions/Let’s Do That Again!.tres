@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bpu56vya3hc0i"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_7d6ml"]
+
+[resource]
+script = ExtResource("1_7d6ml")
+id = "Let’s Do That Again!"
+title = "Let’s Do *That Again!"
+subtitle = ""
+description = "Search through the discard pile. Take any Action or New Rule card you wish and immediately play it.
+
+Anyone may look through the discard pile at any time, but the order of what's in the pile should never be changed."
+type = 2

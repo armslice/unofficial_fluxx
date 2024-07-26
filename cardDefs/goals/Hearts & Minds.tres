@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://d2c11r6rs3p6d"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_wb28n"]
+
+[resource]
+script = ExtResource("1_wb28n")
+id = "Hearts & Minds"
+title = "Hearts *& Minds"
+subtitle = "Love + The Brain"
+description = ""
+type = 0
+values = ["Love", "The Brain"]

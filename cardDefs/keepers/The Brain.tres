@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://drvdpre66unxf"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_ric2r"]
+
+[resource]
+script = ExtResource("1_ric2r")
+id = "The Brain"
+title = "The Brain"
+subtitle = ""
+description = ""
+type = 3

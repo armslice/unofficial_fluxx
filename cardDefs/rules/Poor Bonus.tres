@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://b8wm24asmk8vm"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_5th1e"]
+
+[resource]
+script = ExtResource("1_5th1e")
+id = "Poor Bonus"
+title = ""
+subtitle = "Takes Instant Effect"
+description = "If one player has fewer Keepers in play than any other player, the number of cards drawn by this player on their turn is increased by 1. In a tie, no one gets the bonus."
+type = 1

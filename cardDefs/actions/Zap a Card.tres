@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://cb6wa2kei5yhh"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_04l2k"]
+
+[resource]
+script = ExtResource("1_04l2k")
+id = "Zap a Card"
+title = ""
+subtitle = ""
+description = "Choose any card in play, anywhere on the table (except for the Basic Rules) and add it to your hand."
+type = 2

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dxyho5hxqs72h"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_dxkt2"]
+
+[resource]
+script = ExtResource("1_dxkt2")
+id = "Today’s Special!"
+title = ""
+subtitle = ""
+description = "Set your hand aside and draw 3 cards. If today is your birthday, play all 3 cards. If today is a holiday or special anniversary, play 2 of the cards. If it's just another day, play only 1 card. Discard the remainder."
+type = 2

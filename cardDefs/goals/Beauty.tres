@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://d0a8b7rcc62t3"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_ebghl"]
+
+[resource]
+script = ExtResource("1_ebghl")
+id = "Beauty"
+title = "The Eye of the Beholder"
+subtitle = "The Eye + Love"
+description = ""
+type = 0
+values = ["The Eye", "Love"]

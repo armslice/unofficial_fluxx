@@ -1,0 +1,697 @@
+Keepers (19 cards)
+
+The Party
+Cookies
+Milk
+The Eye
+The Sun
+The Brain
+The Moon
+Chocolate
+Dreams
+Time
+Sleep
+Music
+The Toaster
+Money
+The Rocket
+Television
+Bread
+Love
+Peace
+ 
+Goals (30 cards)
+
+Lullaby
+Can’t Buy Me Love
+Rocket Science
+Party Time!
+Time is Money
+Milk & Cookies
+Rocket to the Moon
+Baked Goods
+Winning the Lottery
+The Brain (No TV)
+10 Cards in Hand
+Chocolate Cookies
+Toast
+Turn it Up!
+Party Snacks
+Night & Day
+Hippyism
+Dreamland
+The Appliances
+The Mind’s Eye
+Hearts & Minds
+Bread & Chocolate
+5 Keepers
+Squishy Chocolate
+World Peace
+Chocolate Milk
+Bed Time
+The Eye of the Beholder
+Day Dreams
+Great Theme Song
+
+ 
+ 
+New Rules (27 cards)
+
+Draw 2
+Draw 3
+Draw 4 
+Draw 5
+Hand Limit 0
+Hand Limit 1
+Hand Limit 2
+Play 2
+Play 3
+Play 4
+Play All
+Play All But 1
+Keeper Limit 2
+Keeper Limit 3
+Keeper Limit 4
+No-Hand Bonus
+Double Agenda
+Poor Bonus
+Rich Bonus
+Party Bonus
+Mystery Play
+Recycling
+Inflation
+First Play Random
+Swap Plays for Draws
+Goal Mill
+Get On With It!
+ 
+Actions (23 cards)
+
+Exchange Keepers
+Draw 2 and Use ‘Em
+Today’s Special!
+Let’s Do That Again!
+Random Tax
+Use What You Take
+Trash A New Rule
+Let’s Simplify
+Draw 3, Play 2 of Them
+Jackpot!
+Trade Hands
+Discard and Draw
+Rules Reset
+Trash a Keeper
+Everybody Gets 1
+Steal a Keeper
+Empty the Trash
+Share the Wealth
+Take Another Turn
+No Limits
+Rotate Hands
+Zap a Card!
+Rock-Paper-Scissors Showdown
+
+
+
+
+id = "The Sun"
+title = "The Sun"
+subtitle = ""
+description = "You can discard this to get rid of The Moon if you have it."
+type = 3
+
+id = "The Moon"
+title = "The Moon"
+subtitle = ""
+description = "You can discard this to get rid of The Sun if you have it."
+type = 3
+
+id = "Chocolate"
+title = "Chocolate"
+subtitle = ""
+description = ""
+type = 3
+
+id = "Cookies"
+title = "Cookies"
+subtitle = ""
+description = ""
+type = 3
+
+id = "Milk"
+title = "Milk"
+subtitle = ""
+description = ""
+type = 3
+
+id = "The Rocket"
+title = "The Rocket"
+subtitle = ""
+description = "You can discard this to get rid of The Wormhole if you have it."
+type = 3
+
+id = "The Eye"
+title = "The Eye"
+subtitle = ""
+description = "You can use this once per turn to look at any player’s hand."
+type = 3
+
+id = "Dreams"
+title = "Dreams"
+subtitle = ""
+description = ""
+type = 3
+
+id = "Sleep"
+title = "Sleep"
+subtitle = ""
+description = ""
+type = 3
+
+id = "Love"
+title = "Love"
+subtitle = ""
+description = ""
+type = 3
+
+id = "Time"
+title = "Time"
+subtitle = ""
+description = ""
+type = 3
+
+id = "Money"
+title = "Money"
+subtitle = ""
+description = ""
+type = 3
+
+id = "The Toaster"
+title = "The Toaster"
+subtitle = ""
+description = ""
+type = 3
+
+id = "Television"
+title = "Television"
+subtitle = ""
+description = ""
+type = 3
+
+id = "Bread"
+title = "Bread"
+subtitle = ""
+description = ""
+type = 3
+
+id = "Peace"
+title = "Peace"
+subtitle = ""
+description = ""
+type = 3
+
+id = "War"
+title = "War"
+subtitle = ""
+description = "You cannot win if you have this unless the Goal says otherwise."
+type = 3
+
+id = "Death"
+title = "Death"
+subtitle = ""
+description = "You cannot win if you have this unless the Goal says otherwise."
+type = 3
+
+id = "Taxes"
+title = "Taxes"
+subtitle = ""
+description = "You cannot win if you have this unless the Goal says otherwise."
+type = 3
+
+id = "The Radioactive Potato"
+title = "The Radioactive Potato"
+subtitle = ""
+description = "You cannot win if you have this unless the Goal says otherwise."
+type = 3
+
+id = "10 Cards in Hand"
+title = "10 Cards in Hand"
+subtitle = ""
+description = "If someone has 10 or more cards in their hand, they win."
+type = 0
+
+id = "5 Keepers"
+title = "5 Keepers"
+subtitle = ""
+description = "If someone has 5 or more Keepers on the table, they win."
+type = 0
+
+id = "All You Need Is Love"
+title = "All You Need Is Love"
+subtitle = ""
+description = "Love + Time"
+type = 0
+
+id = "Cookies and Milk"
+title = "Cookies and Milk"
+subtitle = ""
+description = "Cookies + Milk"
+type = 0
+
+id = "Dreams and Chocolate"
+title = "Dreams and Chocolate"
+subtitle = ""
+description = "Dreams + Chocolate"
+type = 0
+
+id = "Hippyism"
+title = "Hippyism"
+subtitle = ""
+description = "Love + Peace"
+type = 0
+
+id = "Night and Day"
+title = "Night and Day"
+subtitle = ""
+description = "The Sun + The Moon"
+type = 0
+
+id = "Rocket to the Moon"
+title = "Rocket to the Moon"
+subtitle = ""
+description = "The Rocket + The Moon"
+type = 0
+
+id = "The Appliances"
+title = "The Appliances"
+subtitle = ""
+description = "The Toaster + Television"
+type = 0
+
+id = "Time Is Money"
+title = "Time Is Money"
+subtitle = ""
+description = "Time + Money"
+type = 0
+
+id = "Toast"
+title = "Toast"
+subtitle = ""
+description = "The Toaster + Bread"
+type = 0
+
+id = "Winning the Lottery"
+title = "Winning the Lottery"
+subtitle = ""
+description = "The Eye + Money"
+type = 0
+
+id = "Sleepy Time"
+title = "Sleepy Time"
+subtitle = ""
+description = "Sleep + Time"
+type = 0
+
+id = "The Brain"
+title = "The Brain"
+subtitle = ""
+description = "Dreams + Love"
+type = 0
+
+id = "War Is Over"
+title = "War Is Over"
+subtitle = ""
+description = "Love + Peace"
+type = 0
+
+id = "Chocolate Cookies"
+title = "Chocolate Cookies"
+subtitle = ""
+description = "Chocolate + Cookies"
+type = 0
+
+id = "The Mind’s Eye"
+title = "The Mind’s Eye"
+subtitle = ""
+description = "Dreams + The Eye"
+type = 0
+
+id = "Heart and Brain"
+title = "Heart and Brain"
+subtitle = ""
+description = "Love + The Brain"
+type = 0
+
+id = "Peace No War"
+title = "Peace No War"
+subtitle = ""
+description = "Peace + No War"
+type = 0
+
+id = "All That Is Certain"
+title = "All That Is Certain"
+subtitle = ""
+description = "Taxes + Death"
+type = 0
+
+id = "Party Snacks"
+title = "Party Snacks"
+subtitle = ""
+description = "Cookies + Milk + Chocolate"
+type = 0
+
+id = "Star Gazing"
+title = "Star Gazing"
+subtitle = ""
+description = "The Sun + The Moon + The Eye"
+type = 0
+
+id = "Rocket Science"
+title = "Rocket Science"
+subtitle = ""
+description = "The Rocket + The Brain"
+type = 0
+
+id = "Milky Way"
+title = "Milky Way"
+subtitle = ""
+description = "Milk + The Sun"
+type = 0
+
+id = "Space Exploration"
+title = "Space Exploration"
+subtitle = ""
+description = "The Rocket + The Eye"
+type = 0
+
+id = "Appliance Factory"
+title = "Appliance Factory"
+subtitle = ""
+description = "The Toaster + Television + Money"
+type = 0
+
+id = "Toasted Marshmallows"
+title = "Toasted Marshmallows"
+subtitle = ""
+description = "The Toaster + Cookies"
+type = 0
+
+id = "Caffeine"
+title = "Caffeine"
+subtitle = ""
+description = "Milk + The Brain"
+type = 0
+
+id = "Galactic Senate"
+title = "Galactic Senate"
+subtitle = ""
+description = "The Rocket + Peace"
+type = 0
+
+id = "Dreams Come True"
+title = "Dreams Come True"
+subtitle = ""
+description = "Dreams + Money"
+type = 0
+
+id = "Draw 2"
+title = "Draw 2"
+subtitle = ""
+description = "Draw 2 cards per turn."
+type = 1
+
+id = "Draw 3"
+title = "Draw 3"
+subtitle = ""
+description = "Draw 3 cards per turn."
+type = 1
+
+id = "Draw 4"
+title = "Draw 4"
+subtitle = ""
+description = "Draw 4 cards per turn."
+type = 1
+
+id = "Draw 5"
+title = "Draw 5"
+subtitle = ""
+description = "Draw 5 cards per turn."
+type = 1
+
+id = "Play 2"
+title = "Play 2"
+subtitle = ""
+description = "Play 2 cards per turn."
+type = 1
+
+id = "Play 3"
+title = "Play 3"
+subtitle = ""
+description = "Play 3 cards per turn."
+type = 1
+
+id = "Play 4"
+title = "Play 4"
+subtitle = ""
+description = "Play 4 cards per turn."
+type = 1
+
+id = "Play All"
+title = "Play All"
+subtitle = ""
+description = "Play all your cards per turn."
+type = 1
+
+id = "Hand Limit 0"
+title = "Hand Limit 0"
+subtitle = ""
+description = "You can only have 0 cards in your hand at the end of your turn."
+type = 1
+
+id = "Hand Limit 1"
+title = "Hand Limit 1"
+subtitle = ""
+description = "You can only have 1 card in your hand at the end of your turn."
+type = 1
+
+id = "Hand Limit 2"
+title = "Hand Limit 2"
+subtitle = ""
+description = "You can only have 2 cards in your hand at the end of your turn."
+type = 1
+
+id = "Hand Limit 3"
+title = "Hand Limit 3"
+subtitle = ""
+description = "You can only have 3 cards in your hand at the end of your turn."
+type = 1
+
+id = "Keeper Limit 2"
+title = "Keeper Limit 2"
+subtitle = ""
+description = "You can only have 2 Keepers on the table."
+type = 1
+
+id = "Keeper Limit 3"
+title = "Keeper Limit 3"
+subtitle = ""
+description = "You can only have 3 Keepers on the table."
+type = 1
+
+id = "Keeper Limit 4"
+title = "Keeper Limit 4"
+subtitle = ""
+description = "You can only have 4 Keepers on the table."
+type = 1
+
+id = "No-Hand Bonus"
+title = "No-Hand Bonus"
+subtitle = ""
+description = "If you have no cards in your hand, draw 1 card."
+type = 1
+
+id = "Poor Bonus"
+title = "Poor Bonus"
+subtitle = ""
+description = "If you have fewer cards than everyone else, draw 1 card."
+type = 1
+
+id = "Rich Bonus"
+title = "Rich Bonus"
+subtitle = ""
+description = "If you have more Keepers than everyone else, draw 1 card."
+type = 1
+
+id = "Double Agenda"
+title = "Double Agenda"
+subtitle = ""
+description = "There are 2 Goal cards in play. A player wins if they satisfy either Goal."
+type = 1
+
+id = "First Play Random"
+title = "First Play Random"
+subtitle = ""
+description = "Draw 1 card from the deck and play it immediately."
+type = 1
+
+id = "Inflation"
+title = "Inflation"
+subtitle = ""
+description = "All numerical rules and Goals are increased by 1."
+type = 1
+
+id = "Taxation"
+title = "Taxation"
+subtitle = ""
+description = "All players discard 1 card."
+type = 1
+
+id = "Party Bonus"
+title = "Party Bonus"
+subtitle = ""
+description = "If there are 5 or more players, draw 1 card."
+type = 1
+
+id = "Recycling"
+title = "Recycling"
+subtitle = ""
+description = "You can discard 1 card to draw 1 card."
+type = 1
+
+id = "Mystery Play"
+title = "Mystery Play"
+subtitle = ""
+description = "Draw 1 card from the deck and play it immediately."
+type = 1
+
+id = "Reverse Order"
+title = "Reverse Order"
+subtitle = ""
+description = "Play order changes direction."
+type = 1
+
+id = "Play All But 1"
+title = "Play All But 1"
+subtitle = ""
+description = "Play all but 1 of your cards per turn."
+type = 1
+
+id = "Draw 2 and Use ‘Em"
+title = "Draw 2 and Use ‘Em"
+subtitle = ""
+description = "Draw 2 cards and play them immediately."
+type = 2
+
+id = "Use What You Take"
+title = "Use What You Take"
+subtitle = ""
+description = "Draw 1 card from the deck and play it immediately."
+type = 2
+
+id = "Let’s Simplify"
+title = "Let’s Simplify"
+subtitle = ""
+description = "Discard your choice of up to half (rounded up) of the New Rule cards in play."
+type = 2
+
+id = "Trash a Keeper"
+title = "Trash a Keeper"
+subtitle = ""
+description = "Choose any Keeper in play and discard it."
+type = 2
+
+id = "Steal a Keeper"
+title = "Steal a Keeper"
+subtitle = ""
+description = "Take any Keeper from another player and put it in front of you."
+type = 2
+
+id = "Exchange Keepers"
+title = "Exchange Keepers"
+subtitle = ""
+description = "Trade any Keeper with another player."
+type = 2
+
+id = "Trade Hands"
+title = "Trade Hands"
+subtitle = ""
+description = "Exchange your hand with another player."
+type = 2
+
+id = "Discard and Draw"
+title = "Discard and Draw"
+subtitle = ""
+description = "Discard your entire hand and draw the same number of cards you discarded."
+type = 2
+
+id = "Rotate Hands"
+title = "Rotate Hands"
+subtitle = ""
+description = "All players pass their hands to the left."
+type = 2
+
+id = "Jackpot!"
+title = "Jackpot!"
+subtitle = ""
+description = "Draw 3 extra cards."
+type = 2
+
+id = "Rules Reset"
+title = "Rules Reset"
+subtitle = ""
+description = "Discard all New Rule cards."
+type = 2
+
+id = "Take Another Turn"
+title = "Take Another Turn"
+subtitle = ""
+description = "Take another full turn after this one."
+type = 2
+
+id = "Taxation"
+title = "Taxation"
+subtitle = ""
+description = "All players discard 1 card."
+type = 2
+
+id = "Trash a New Rule"
+title = "Trash a New Rule"
+subtitle = ""
+description = "Choose any New Rule in play and discard it."
+type = 2
+
+id = "Everybody Gets 1"
+title = "Everybody Gets 1"
+subtitle = ""
+description = "All players draw 1 card."
+type = 2
+
+id = "Mix It All Up"
+title = "Mix It All Up"
+subtitle = ""
+description = "All players shuffle their hands together and redistribute them evenly."
+type = 2
+
+id = "Let’s Do That Again!"
+title = "Let’s Do That Again!"
+subtitle = ""
+description = "Take the top Action card from the discard pile and play it again."
+type = 2
+
+id = "Empty the Trash"
+title = "Empty the Trash"
+subtitle = ""
+description = "All players discard their entire hand and draw 3 cards."
+type = 2
+
+id = "Draw 3, Play 2 of Them"
+title = "Draw 3, Play 2 of Them"
+subtitle = ""
+description = "Draw 3 cards and play 2 of them immediately."
+type = 2
+
+id = "Draw 4, Play 3 of Them"
+title = "Draw 4, Play 3 of Them"
+subtitle = ""
+description = "Draw 4 cards and play 3 of them immediately."
+type = 2

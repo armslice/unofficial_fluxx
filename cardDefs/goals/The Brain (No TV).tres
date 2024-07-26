@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dt0pcre5ayw1k"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_vqhiw"]
+
+[resource]
+script = ExtResource("1_vqhiw")
+id = "The Brain (No TV)"
+title = "The Brain *(No TV)"
+subtitle = ""
+description = "If no one has Television on the table, the player with The Brain on the table wins.	"
+type = 0

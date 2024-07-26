@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://cjb1fkl02pve7"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_qjolp"]
+
+[resource]
+script = ExtResource("1_qjolp")
+id = "Rules Reset"
+title = ""
+subtitle = ""
+description = "Reset to the Basic Rules.
+
+Discard all New Rule cards, and leave only the Basic Rules in play.
+
+Do not discard the current Goal."
+type = 2

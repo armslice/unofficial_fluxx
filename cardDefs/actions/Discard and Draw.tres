@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bitdbqed74g8i"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_atdpm"]
+
+[resource]
+script = ExtResource("1_atdpm")
+id = "Discard and Draw"
+title = "Discard *and Draw"
+subtitle = ""
+description = "Discard your entire hand, then draw as many cards as you discarded.
+
+Do not count this card when determining how many cards to draw."
+type = 2

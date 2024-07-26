@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://baun0fw6gr6pk"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_1weir"]
+
+[resource]
+script = ExtResource("1_1weir")
+id = "World Peace"
+title = ""
+subtitle = "Dreams + Peace"
+description = ""
+type = 0
+values = []

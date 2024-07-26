@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bl2ju82garsp4"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_4cp1a"]
+
+[resource]
+script = ExtResource("1_4cp1a")
+id = "RPS Showdown"
+title = "Rock-Paper- *Scissors *Showdown"
+subtitle = ""
+description = "Challenge another player to a 3-round Rock-Paper- Scissors tournament.
+
+Winner takes loser's entire hand of cards."
+type = 2

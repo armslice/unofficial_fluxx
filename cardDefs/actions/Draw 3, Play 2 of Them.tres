@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bysl73u03cj52"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_ehg4h"]
+
+[resource]
+script = ExtResource("1_ehg4h")
+id = "Draw 3, Play 2 of Them"
+title = "Draw 3, *Play 2 of Them"
+subtitle = ""
+description = "Set your hand aside.
+
+Draw 3 cards and play 2 of them. Discard the last card, then pick up your hand and continue with your turn.
+
+This card, and all cards played because of it, are counted as a single play."
+type = 2

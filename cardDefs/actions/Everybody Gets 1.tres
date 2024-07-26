@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://cnfk4pk0ybhxb"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_lxhh3"]
+
+[resource]
+script = ExtResource("1_lxhh3")
+id = "Everybody Gets 1"
+title = "Everybody *Gets 1"
+subtitle = ""
+description = "Set your hand aside.
+
+Count the number of players in the game (including yourself). Draw enough cards to give 1 card to each player, and then distribute them evenly amongst all the players.
+
+You look at the cards and decide who gets what, handing the cards out face down to each player."
+type = 2

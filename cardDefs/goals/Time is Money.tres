@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://d3wu8ajw61mbc"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_t81l3"]
+
+[resource]
+script = ExtResource("1_t81l3")
+id = "Time is Money"
+title = ""
+subtitle = "Time + Money"
+description = ""
+type = 0
+values = ["Time", "Money"]

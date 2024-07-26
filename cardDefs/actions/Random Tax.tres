@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://csrbgq4umqpb2"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_45vwu"]
+
+[resource]
+script = ExtResource("1_45vwu")
+id = "Random Tax"
+title = ""
+subtitle = ""
+description = "Take 1 card at random from the hand of each other player and add these cards to your own hand."
+type = 2

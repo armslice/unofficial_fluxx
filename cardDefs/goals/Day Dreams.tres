@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dd3662egs56em"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_wjoir"]
+
+[resource]
+script = ExtResource("1_wjoir")
+id = "Day Dreams"
+title = ""
+subtitle = "The Sun + Dreams"
+description = ""
+type = 0
+values = ["The Sun", "Dreams"]

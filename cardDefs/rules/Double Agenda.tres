@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://c0jdjsbx05cah"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_1ffla"]
+
+[resource]
+script = ExtResource("1_1ffla")
+id = "Double Agenda"
+title = ""
+subtitle = "Takes Instant Effect"
+description = "A second Goal can now be played. After this, whoever plays a new Goal must choose which of the current Goals to discard. You win if you satisfy either Goal."
+type = 1

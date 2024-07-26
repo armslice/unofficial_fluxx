@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://kvq73pi5l06u"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_e6r4b"]
+
+[resource]
+script = ExtResource("1_e6r4b")
+id = "Draw 3, Play 2 of Them"
+title = ""
+subtitle = ""
+description = "Discard your choice of up to half (rounded up) of the New Rule cards in play."
+type = 2

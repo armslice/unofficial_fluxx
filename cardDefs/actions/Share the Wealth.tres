@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://brp3noe4w3jre"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_5h8pm"]
+
+[resource]
+script = ExtResource("1_5h8pm")
+id = "Share the Wealth"
+title = "Share the *Wealth"
+subtitle = ""
+description = "Gather up all the Keepers on the table, shuffle them together, and deal them back out to all players, starting with yourself. These go immediately into play in front of their new owners.
+
+Everyone will probably end up with a different number of Keepers in play than they started with."
+type = 2

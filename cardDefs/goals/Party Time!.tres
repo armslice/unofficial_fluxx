@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dtw3tu06n5gwi"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_niim4"]
+
+[resource]
+script = ExtResource("1_niim4")
+id = "Party Time!"
+title = ""
+subtitle = "The Party + Time"
+description = ""
+type = 0
+values = ["The Party", "Time"]

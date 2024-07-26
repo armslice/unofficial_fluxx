@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dgtsi65q7c2x8"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_7epia"]
+
+[resource]
+script = ExtResource("1_7epia")
+id = "Exchange Keepers"
+title = "Exchange *Keepers"
+subtitle = ""
+description = "Pick any Keeper another player has on the table and exchange it for one you have on the table.
+
+If you have no Keepers in play, or if no one else has a Keeper, nothing happens."
+type = 2

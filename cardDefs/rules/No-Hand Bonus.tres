@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://csi3usqpd0w80"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_klen5"]
+
+[resource]
+script = ExtResource("1_klen5")
+id = "No-Hand Bonus"
+title = "No-Hand *Bonus"
+subtitle = "Start-of-Turn Event"
+description = "If empty handed, draw 3 cards before observing the current draw rule."
+type = 1

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://b1rho27kdcarg"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_cm87w"]
+
+[resource]
+script = ExtResource("1_cm87w")
+id = "Hippyism"
+title = ""
+subtitle = "Peace + Love"
+description = ""
+type = 0
+values = ["Peace", "Love"]

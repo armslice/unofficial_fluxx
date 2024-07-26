@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://c8dwnb0o0sjnf"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_24au0"]
+
+[resource]
+script = ExtResource("1_24au0")
+id = "Take Another Turn"
+title = "Take Another *Turn"
+subtitle = ""
+description = "Take another turn as soon as you finish this one.
+
+The maximum number of turns you can take in a row using this card is two."
+type = 2

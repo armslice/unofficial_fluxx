@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://bvrlcbnow43v6"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_6gnkf"]
+
+[resource]
+script = ExtResource("1_6gnkf")
+id = "Empty the Trash"
+title = "Empty the *Trash"
+subtitle = ""
+description = "Start a new discard pile with this card and shuffle the rest of the discard pile back into the draw pile."
+type = 2

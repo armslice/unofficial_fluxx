@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardDefinition" load_steps=2 format=3 uid="uid://dsn08p68c8w2j"]
+
+[ext_resource type="Script" path="res://CardDefinition.gd" id="1_b0is6"]
+
+[resource]
+script = ExtResource("1_b0is6")
+id = "Rich Bonus"
+title = ""
+subtitle = "Takes Instant Effect"
+description = "If one player has more Keepers in play than any other player, the number of cards played by this player on their turn is increased by 1, In a tie, no one gets the bonus."
+type = 1
