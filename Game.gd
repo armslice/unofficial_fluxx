@@ -1,6 +1,5 @@
 extends Node2D
 
-
 var dev = true
 
 func _ready():
@@ -13,7 +12,7 @@ func log(text):
 	$modal/DebugPanel.addLog(text)
 
 func _input(event):
-	if event.is_action_pressed("toggleDebug"):
+	if dev and event.is_action_pressed("toggleDebug"):
 		$modal/DebugPanel.visible = !$modal/DebugPanel.visible
 
 
