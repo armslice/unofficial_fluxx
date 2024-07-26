@@ -1,5 +1,11 @@
 extends Node2D
 
+# Board is the incharge of the current state of the game.
+# it contains the deck and the discard piles and the players.
+# Players are defined as a inner class of the board.
+# The board keeps track which player's turn it is (currentPlayer)
+
+
 enum {CARD_IDS,CARD_DEFS}
 
 const TYPE_ORDER = ["keepers","goals","actions","rules"]
@@ -34,29 +40,32 @@ var ruleFlags = {
 
 var keeperLimit = null
 
+const topPositionAtFull = -184    #when the deck is full the top card is offset by this amout
 
-const topPositionAtFull = -184
+#These constant are used when laying out the cards
 const CARD_ZONE_W = 500
 const CARD_W = 400
 const CARD_H = 625
 
+#Card that is in focus
 var highlightCard = null
 var highlightsPlayed = []
-var dragCard = null
-var dropZone = null
-var mouseOverHand =false
+var dragCard = null  #Card that is currently being dragged
+var dropZone = null  #When the drag card hovers over the dropzone is set
+var mouseOverHand =false   #When the mouse hovers over the players hand
 var ruleZoom = false
-var playerView = false
+var playerView = false  #when you click on the playerdock it pans up to show the other players keepers
 
-@onready var handPos = $HandPos.position
-@onready var dropper = $dropper
-@onready var playerDock = $PlayerDock
+@onready var handPos = $HandPos.position  #used for laying out cards
+@onready var dropper = $dropper  #used for collsion detection with drops zones
+#The dropper is attached to the drag card
 
-var topPositionOfDeck = 0
+@onready var playerDock = $PlayerDock  #The players at the top of the screen
 
-var mainPlayerNumber = 0
+var topPositionOfDeck = 0  #current hieght of the deck
+
+var mainPlayerNumber = 0   #The client players number. This would be assigned by the server.
 var players = []
-
 
 class Player:
 	var number
@@ -64,7 +73,7 @@ class Player:
 	var hand = []
 	var keepers = []
 	var plays = 0
-	var draws = 99
+	var draws = 0
 	var dockSlot
 	
 	func _init(num):
